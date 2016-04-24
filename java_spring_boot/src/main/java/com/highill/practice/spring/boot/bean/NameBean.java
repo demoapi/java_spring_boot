@@ -8,6 +8,20 @@ public class NameBean {
 
 	private String fullName;
 
+	public NameBean()
+	{
+		firstName = "";
+		lastName = "";
+		fullName = firstName + " " + lastName;
+	}
+
+	public NameBean(String firstName, String lastName)
+	{
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.fullName = this.firstName + " " + this.lastName;
+	}
+
 	public String getFirstName()
 	{
 		return firstName;
